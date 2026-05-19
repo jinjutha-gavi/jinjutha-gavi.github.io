@@ -1,0 +1,50 @@
+/* =============================================
+   PROJECTS — Featured Projects Section
+   ============================================= */
+
+.projects { padding: 120px 0; position: relative; z-index: 1; }
+
+.project-showcase { display: flex; flex-direction: column; gap: 80px; }
+
+.project-item {
+    display: grid; grid-template-columns: 1fr 1.2fr;
+    gap: 40px; align-items: center;
+}
+.project-item.reverse { grid-template-columns: 1.2fr 1fr; }
+.project-item.reverse .project-meta { order: 2; text-align: right; }
+.project-item.reverse .project-meta .project-tech { justify-content: flex-end; }
+.project-item.reverse .project-meta .project-links { justify-content: flex-end; }
+
+.project-tag {
+    font-size: 0.8rem; font-weight: 600; color: var(--primary-light);
+    text-transform: uppercase; letter-spacing: 2px;
+}
+.project-title {
+    font-family: 'Outfit'; font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800; color: var(--text-bright); margin: 8px 0 16px;
+}
+
+.project-desc-card { padding: 20px 24px; }
+.project-desc-card p {
+    color: var(--text-dim); font-size: 0.9rem;
+    line-height: 1.7; position: relative; z-index: 1;
+}
+
+.project-tech { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+.project-tech span {
+    font-size: 0.78rem; padding: 4px 14px; border-radius: 6px;
+    background: rgba(59, 130, 246, 0.12); color: var(--primary-light);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.project-links { display: flex; gap: 12px; margin-top: 16px; }
+.project-link-btn {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: rgba(59, 130, 246, 0.1); border: 1px solid var(--glass-border);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-main); transition: var(--transition); text-decoration: none;
+}
+.project-link-btn:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
+
+.project-preview { padding: 16px; }
+.project-preview img { width: 100%; border-radius: 12px; display: block; }

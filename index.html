@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JINJUTHA GAVINDARL</title>
+    <meta name="description" content="Portfolio of Jinjutha Gavindarl — Creative Developer & Designer specializing in Flutter, Web Development, and UI/UX Design.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Ambient Background Orbs -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- ==========================================
+         NAVIGATION BAR
+    =========================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <div class="logo">
+                <a href="#home" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                   <img src="assets/logo.png" height="30px" width="30px">
+                    <!--<span class="logo-icon">JG.</span>-->
+                    <span class="logo-text">JINJUTHA G.</span>
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="design.html" class="nav-link">Design</a></li>
+                <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- ==========================================
+         HERO SECTION
+    =========================================== -->
+    <header id="home" class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hello-badge animate-in">
+                    <span class="badge-dot"></span>
+                    Hello!
+                </div>
+                <h1 class="hero-title animate-in delay-1">
+                    I'm <span class="gradient-text">JINJUTHA,</span><br>
+                    GAVINDARL
+                </h1>
+                <div class="hero-quote animate-in delay-2">
+                    <div class="quote-mark">"</div>
+                    <p>A collection of my work. Thank you so much for visiting!</p>
+                </div>
+                <div class="hero-actions animate-in delay-3">
+                    <a href="#projects" class="btn btn-primary">
+                        Portfolio
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">Hire Me</a>
+                </div>
+            </div>
+            <div class="hero-visual animate-in delay-2">
+                <div class="hero-photo-wrapper">
+                    <div class="photo-glow"></div>
+                    <img src="assets/profile.png" alt="Jinjutha Gavindarl" class="hero-photo">
+                    <div class="photo-ring"></div>
+                </div>
+                <div class="floating-stat stat-exp">
+                    <div class="stat-stars">★★★★★</div>
+                    <div class="stat-number">IT</div>
+                    <div class="stat-label">School of Information Technology<br>and Innovation</div>
+                </div>
+                <div class="floating-stat stat-projects">
+                    <div class="stat-number">Bachelor's degree</div>
+                    <div class="stat-label">Bangkok University</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+
+    <!-- ==========================================
+         ABOUT SECTION
+    =========================================== -->
+    <section id="about" class="about" style="padding-top: 150px;">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-label">About Me</h2>
+                    <h3 class="about-heading">An IT major who <span class="gradient-text">doodles </span>a bit <br> Thanks for stopping by ! </h3>
+                    <p class="about-desc">Crafting functional and visually engaging digital products. Dedicated to cross-platform mobile development, web optimization, and thoughtful UI/UX.</p>
+                    <div class="about-stats">
+                        <div class="about-stat-item">
+                            <span class="about-stat-num">5+</span>
+                            <span class="about-stat-text">Projects</span>
+                        </div>
+                        <div class="about-stat-item">
+                            <span class="about-stat-num">5+</span>
+                            <span class="about-stat-text">Technologies</span>
+                        </div>
+                        <div class="about-stat-item">
+                            <span class="about-stat-num">2+</span>
+                            <span class="about-stat-text">Years Coding</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="glass-card about-card">
+                        <div class="about-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+                                <path d="M6 18.8V12"/>
+                                <path d="M18 12v6.8a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V12"/>
+                            </svg>
+                        </div>
+                        <h4>Education</h4>
+                        <p>Information Technology and Innovation</p>
+                    </div>
+                    <div class="glass-card about-card">
+                        <div class="about-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18h6" />
+                                <path d="M10 22h4" />
+                                <path d="M15.09 14a8 8 0 1 0-6.18 0" />
+                                <path d="M12 2v2" />
+                                <path d="M22 12h-2" />
+                                <path d="M2 12H4" />
+                                <path d="M4.93 4.93L6.34 6.34" />
+                                <path d="M17.66 17.66l1.41 1.41" />
+                                <path d="M4.93 19.07l1.41-1.41" />
+                                <path d="M17.66 6.34l1.41-1.41" />
+                            </svg>
+                        </div>
+                        <h4>Focus</h4>
+                        <p>Frontend & UX/UI Design</p>
+                    </div>
+                    <div class="glass-card about-card">
+                        <div class="about-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5 21.5 11 21 11H18.5C17.6716 11 17 10.3284 17 9.5V8.5C17 7.5 16 6.5 15 6.5H14C13 6.5 12 5.5 12 4.5V3C12 2.5 11.5 2 11 2C5.47715 2 1 6.47715 1 12C1 17.5228 5.47715 22 12 22Z"/>
+                                <circle cx="7.5" cy="10.5" r="1"/>
+                                <circle cx="11.5" cy="7.5" r="1"/>
+                                <circle cx="16.5" cy="11.5" r="1"/>
+                            </svg>
+                        </div>
+                        <h4>Passion</h4>
+                        <p>UI/UX & Creative Design , Graphic Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SERVICES SECTION
+    =========================================== -->
+    <section id="services" class="services" style="padding-top: 150px;">
+        <div class="section-container">
+            <div class="services-header">
+                <div>
+                    <h2 class="section-label">My Services</h2>
+                    <h3 class="section-heading">What I <span class="gradient-text">Offer</span></h3>
+                </div>
+                <p class="services-desc">Design is how it works, but passion is how it feels. I create applications that aren't just functional, but beautiful to experience.</p>
+            </div>
+            <div class="services-grid">
+                <div class="glass-card service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1"/></svg>
+                    </div>
+                    <h4>Mobile App Development</h4>
+                    <p>Building beautiful, cross-platform mobile applications with Flutter & Dart, integrated with Firebase backend.</p>
+                    <a href="#projects" class="service-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                </div>
+                <div class="glass-card service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h4>Web Development</h4>
+                    <p>Creating responsive, modern websites with HTML, CSS, JavaScript, and cutting-edge frameworks for seamless user experience.</p>
+                    <a href="#projects" class="service-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                </div>
+                <div class="glass-card service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h4>UI/UX Design</h4>
+                    <p>Designing intuitive, visually stunning interfaces with Figma and Illustrator that delight users and boost engagement.</p>
+                    <a href="#projects" class="service-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         RECENT WORKS MENU
+    =========================================== -->
+    <section id="projects" class="projects" style="padding-top: 150px;">
+        <div class="section-container">
+            <div class="glass-card" style="padding: 80px 40px; text-align: center; border-radius: 30px; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; border: 1px solid var(--primary-light);">
+                <!-- Decorative background elements -->
+                <div style="position: absolute; top: -50%; left: -10%; width: 300px; height: 300px; background: var(--primary); filter: blur(100px); opacity: 0.2; border-radius: 50%; pointer-events: none;"></div>
+                <div style="position: absolute; bottom: -50%; right: -10%; width: 300px; height: 300px; background: var(--accent); filter: blur(100px); opacity: 0.2; border-radius: 50%; pointer-events: none;"></div>
+                
+                <h2 class="section-label" style="margin-bottom: 0;">Portfolio Showcase</h2>
+                <h3 class="section-heading" style="margin-bottom: 10px; font-size: 3rem;">Explore My <span class="gradient-text">Recent Works</span></h3>
+                <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 30px; font-size: 1.15rem; line-height: 1.6;">Showcasing my experience through the Vela app, smart automation tools, and optimized web platforms.</p>
+                
+                <a href="projects.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 18px 45px; border-radius: 50px; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);">
+                    View All Projects
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         SKILLS SECTION
+    =========================================== -->
+    <section id="skills" class="skills" style="padding-top: 150px;">
+        <div class="section-container">
+            <h2 class="section-label" style="text-align:center;">My Skills</h2>
+            <h3 class="section-heading" style="text-align:center; margin-bottom: 60px;">Tech <span class="gradient-text">Stack</span></h3>
+
+            <div class="skills-orbit">
+                <div class="skills-categories">
+
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-cat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="14" x="2" y="3" rx="2" />
+                                <path d="M12 17v4" />
+                                <path d="M8 21h8" />
+                                <path d="m10 8-2 2 2 2" />
+                                <path d="m14 8 2 2-2 2" />
+                            </svg>
+                        </div>
+                        <h4>Frontend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-pill">HTML</span>
+                            <span class="skill-pill">CSS</span>
+                            <span class="skill-pill">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-cat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+                                <path d="M12 18h.01" />
+                            </svg>
+                        </div>
+                        <h4>Mobile</h4>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Flutter</span>
+                            <span class="skill-pill">Dart</span>
+                            <span class="skill-pill">Firebase</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-cat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                                <circle cx="12" cy="12" r="3" />
+                                <path d="M16 20a2 2 0 1 0 4 0 2 2 0 1 0-4 0z" opacity="0.8" />
+                            </svg>
+                        </div>
+                        <h4>Automation</h4>
+                        <div class="skill-tags">
+                            <span class="skill-pill">UiPath</span>
+                            <span class="skill-pill">RPA</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-cat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <path d="M3.27 6.96L12 12.01l8.73-5.05" />
+                                <path d="M12 22.08V12" />
+                            </svg>
+                        </div>
+                        <h4>DevOps</h4>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Docker</span>
+                            <span class="skill-pill">Linux</span>
+                            <span class="skill-pill">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="tools-section">
+                <h4 class="tools-title">Tools & Software</h4>
+                <div class="tools-grid">
+                    <div class="tool-chip"><span>Microsoft Office</span></div>
+                    <div class="tool-chip"><span>Illustrator</span></div>
+                    <div class="tool-chip"><span>Photoshop</span></div>
+                    <div class="tool-chip"><span>Figma</span></div>
+                    <div class="tool-chip"><span>MySQL</span></div>
+                    <div class="tool-chip"><span>Jira</span></div>
+                    <div class="tool-chip"><span>VS Code</span></div>
+                    <div class="tool-chip"><span>Git / GitHub</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DESIGN CTA MENU
+    =========================================== -->
+    <section id="design" class="projects" style="padding-top: 50px;">
+        <div class="section-container">
+            <div class="glass-card" style="padding: 60px 40px; text-align: center; border-radius: 30px; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; border: 1px solid rgba(236, 72, 153, 0.3);">
+                <div style="position: absolute; top: -50%; left: -10%; width: 300px; height: 300px; background: #ec4899; filter: blur(100px); opacity: 0.15; border-radius: 50%; pointer-events: none;"></div>
+                
+                <h2 class="section-label" style="margin-bottom: 0; color: #ec4899;">Creative Playground</h2>
+                <h3 class="section-heading" style="margin-bottom: 10px; font-size: 2.5rem;">Graphic & <span class="gradient-text" style="background: linear-gradient(90deg, #ec4899, #8b5cf6); -webkit-background-clip: text;">Design Portfolio</span></h3>
+                <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">Creative design portfolio leveraging a multi-tool approach and integrated design Methodologies.</p>
+                
+                <a href="design.html" class="btn btn-primary" style="background: linear-gradient(90deg, #ec4899, #8b5cf6); box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);">
+                    View Design Showcase
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CERTIFICATES CTA MENU
+    =========================================== -->
+    <section id="certificates" class="certificates" style="padding-top: 50px;">
+        <div class="section-container">
+            <div class="glass-card" style="padding: 60px 40px; text-align: center; border-radius: 30px; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; border: 1px solid rgba(251, 191, 36, 0.3);">
+                <div style="position: absolute; bottom: -50%; right: -10%; width: 300px; height: 300px; background: #fbbf24; filter: blur(100px); opacity: 0.15; border-radius: 50%; pointer-events: none;"></div>
+                
+                <h2 class="section-label" style="margin-bottom: 0; color: #fbbf24;">Achievements</h2>
+                <h3 class="section-heading" style="margin-bottom: 10px; font-size: 2.5rem;">My <span class="gradient-text" style="background: linear-gradient(90deg, #fbbf24, #f59e0b); -webkit-background-clip: text;">Certificates</span></h3>
+                <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">A collection of professional certifications demonstrating multi-disciplinary training and continuous skill development.</p>
+                
+                <a href="certificates.html" class="btn btn-primary" style="background: linear-gradient(90deg, #fbbf24, #f59e0b); box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);">
+                    View Certificates
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+    =========================================== -->
+    <section id="contact" class="contact" style="padding-top: 150px; padding-bottom: 100px;">
+        <div class="section-container">
+            <h2 class="section-label" style="text-align:center;">Get in Touch</h2>
+            <h3 class="section-heading" style="text-align:center; margin-bottom: 20px;">Let's <span class="gradient-text">Connect</span></h3>
+            <p class="contact-intro">Please feel free to contact me below.</p>
+
+            <div class="contact-grid">
+                <a href="mailto:jinjuthagavindarl@gmail.com" class="glass-card contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h4>Email</h4>
+                    <p>jinjuthagavindarl@gmail.com</p>
+                </a>
+                <a href="https://github.com/jinjutha-gavi" target="_blank" class="glass-card contact-card">
+                    <div class="contact-icon">💻</div>
+                    <h4>GitHub</h4>
+                    <p>github.com/jinjutha-gavi</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">JG<span>.</span></div>
+            <p>&copy; 2026 Jinjutha Gavindarl.</p>
+            <!--<div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>-->
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

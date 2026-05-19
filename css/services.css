@@ -1,0 +1,42 @@
+/* =============================================
+   SERVICES — My Services Section
+   ============================================= */
+
+.services {
+    padding: 120px 0; position: relative; z-index: 1;
+    background: rgba(8, 18, 36, 0.5);
+}
+
+.services-header {
+    display: flex; justify-content: space-between;
+    align-items: flex-end; margin-bottom: 50px;
+    flex-wrap: wrap; gap: 20px;
+}
+.services-desc { max-width: 400px; color: var(--text-dim); font-size: 0.9rem; }
+
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+.service-card { padding: 36px 28px; position: relative; }
+.service-icon {
+    width: 56px; height: 56px; border-radius: 14px;
+    background: var(--gradient-subtle); display: flex;
+    align-items: center; justify-content: center;
+    color: var(--primary-light); margin-bottom: 20px;
+}
+.service-card h4 {
+    font-family: 'Outfit'; font-size: 1.15rem;
+    color: var(--text-bright); margin-bottom: 12px;
+}
+.service-card p {
+    color: var(--text-dim); font-size: 0.88rem;
+    line-height: 1.7; margin-bottom: 20px;
+}
+
+.service-link {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: var(--gradient-main); display: flex;
+    align-items: center; justify-content: center;
+    color: #fff; transition: var(--transition); text-decoration: none;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+.service-link:hover { transform: scale(1.1) rotate(5deg); }

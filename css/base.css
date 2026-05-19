@@ -1,0 +1,146 @@
+/* =============================================
+   BASE — Design Tokens, Reset, Body, Shared
+   ============================================= */
+
+:root {
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --bg-deep: #020813;
+    --bg-surface: #0a1428;
+    --bg-card: rgba(10, 20, 45, 0.5);
+    --glass-border: rgba(96, 165, 250, 0.2);
+    --glass-shine: rgba(147, 197, 253, 0.08);
+    --primary: #3b82f6;
+    --primary-light: #60a5fa;
+    --accent: #06b6d4;
+    --gradient-main: linear-gradient(135deg, #3b82f6, #06b6d4, #2563eb);
+    --gradient-subtle: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(6,182,212,0.1));
+    --text-main: #f1f5f9;
+    --text-dim: #94a3b8;
+    --text-bright: #ffffff;
+    --radius: 20px;
+    --transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    --transition-smooth: all 0.3s ease;
+}
+
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--bg-deep);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.5px;
+}
+
+/* Custom Cursor */
+@media (pointer: fine) {
+    body, a, button, input, textarea, .btn, .glass-card, .service-card, .project-item {
+        cursor: none !important;
+    }
+}
+.cursor-dot, .cursor-outline {
+    position: fixed;
+    top: 0; left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+.cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-light);
+    box-shadow: 0 0 10px var(--primary);
+}
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(96, 165, 250, 0.5);
+    background: rgba(96, 165, 250, 0.05);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+    transition: width 0.3s, height 0.3s, background-color 0.3s, border-color 0.3s, transform 0.1s;
+}
+.cursor-outline.hover {
+    width: 60px;
+    height: 60px;
+    background: rgba(96, 165, 250, 0.15);
+    border-color: var(--primary);
+}
+
+/* Ambient Background Orbs */
+.bg-orbs { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.orb {
+    position: absolute; border-radius: 50%;
+    filter: blur(100px); opacity: 0.3;
+    animation: orbFloat 20s ease-in-out infinite;
+}
+.orb-1 { width: 600px; height: 600px; background: #2563eb; top: -10%; left: -10%; }
+.orb-2 { width: 500px; height: 500px; background: #3b82f6; bottom: 20%; right: -10%; animation-delay: -7s; }
+.orb-3 { width: 400px; height: 400px; background: #06b6d4; top: 50%; left: 30%; animation-delay: -14s; opacity: 0.15; }
+
+/* Shared Section Utilities */
+.section-container { max-width: 1200px; margin: 0 auto; padding: 0 5%; position: relative; z-index: 1; }
+.section-label {
+    font-family: var(--font-display); font-size: 0.9rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 4px; color: var(--primary-light);
+    margin-bottom: 12px;
+}
+.section-heading {
+    font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800; color: var(--text-bright); margin-bottom: 20px;
+    line-height: 1.1;
+}
+.gradient-text {
+    background: var(--gradient-main); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+/* Glass Card — Reusable Component */
+.glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    position: relative; overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.glass-card::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(135deg, var(--glass-shine), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+.glass-card > * { position: relative; z-index: 1; }
+.glass-card:hover {
+    border-color: rgba(96, 165, 250, 0.6);
+    box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2);
+    transform: translateY(-8px) scale(1.01);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px;
+    border-radius: 50px; font-weight: 700; font-size: 1rem; font-family: var(--font-display);
+    text-decoration: none; transition: var(--transition); cursor: pointer;
+    text-transform: uppercase; letter-spacing: 1px;
+}
+.btn-primary {
+    background: var(--gradient-main); color: #fff;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.35);
+}
+.btn-primary:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 8px 30px rgba(59, 130, 246, 0.5); }
+.btn-ghost {
+    background: transparent; color: var(--text-main);
+    border: 1px solid rgba(59, 130, 246, 0.4);
+}
+.btn-ghost:hover { background: rgba(59, 130, 246, 0.1); border-color: var(--primary); }

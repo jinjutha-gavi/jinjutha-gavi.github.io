@@ -1,0 +1,54 @@
+/* =============================================
+   RESPONSIVE (MEDIA QUERIES)
+   ============================================= */
+
+@media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .skills-categories { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav-links { 
+        display: none; position: fixed; top: 0; right: 0;
+        width: 280px; height: 100vh; background: rgba(10,0,20,0.97);
+        backdrop-filter: blur(20px); flex-direction: column;
+        padding: 80px 30px 30px; gap: 10px;
+        border-left: 1px solid var(--glass-border);
+    }
+    .nav-links.open { display: flex; }
+    
+    .hamburger { display: flex; }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* Hero */
+    .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+    .hero-content { order: 2; }
+    .hero-visual { order: 1; }
+    .hero-quote { justify-content: center; }
+    .hero-actions { justify-content: center; }
+    .hero-photo-wrapper { width: 260px; height: 260px; }
+
+    /* About */
+    .about-grid { grid-template-columns: 1fr; }
+    .about-stats { justify-content: center; }
+
+    /* Services */
+    .services-header { flex-direction: column; text-align: center; align-items: center; }
+    .services-grid { grid-template-columns: 1fr; }
+
+    /* Projects */
+    .project-item, .project-item.reverse { grid-template-columns: 1fr; }
+    .project-item.reverse .project-meta { order: 0; text-align: left; }
+    .project-item.reverse .project-meta .project-tech { justify-content: flex-start; }
+    .project-item.reverse .project-meta .project-links { justify-content: flex-start; }
+
+    /* Skills & Contact */
+    .skills-categories { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+
+    /* Footer */
+    .footer-inner { flex-direction: column; text-align: center; }
+}
