@@ -1,0 +1,82 @@
+/* =============================================
+   DESIGN PLAYGROUND STYLES
+   ============================================= */
+
+.design-skills-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.design-category-card {
+    border-color: rgba(83, 104, 120, 0.4) !important;
+    max-width: 500px;
+    width: 100%;
+}
+
+.design-bar-fill {
+    height: 100%;
+    width: 85%;
+    background: var(--gradient-main);
+    border-radius: 4px;
+}
+
+.design-category-desc {
+    margin-top: 20px;
+    color: var(--text-dim);
+    font-size: 0.95rem;
+}
+
+.design-showcase-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.design-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.design-card {
+    padding: 20px;
+    transition: var(--transition);
+}
+
+.design-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(83, 104, 120, 0.25);
+    transform: translateY(-8px);
+}
+
+.design-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-smooth);
+}
+
+.design-card:hover .design-image {
+    transform: scale(1.02);
+    border-color: var(--primary-light);
+}
+
+.design-card h4 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--text-bright);
+}
+
+.design-card p {
+    color: var(--text-dim);
+    margin-top: 5px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

@@ -5,7 +5,7 @@
 .navbar {
     position: fixed; top: 0; width: 100%; z-index: 1000;
     background: rgba(0, 10, 20, 0.7); backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+    border-bottom: 1px solid rgba(83, 104, 120, 0.1);
     transition: var(--transition-smooth);
 }
 .navbar.scrolled { background: rgba(0, 10, 20, 0.92); }
@@ -36,16 +36,16 @@
 .nav-link:hover, .nav-link.active { color: var(--text-bright); }
 .nav-link.active {
     background: var(--gradient-main); color: #fff;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 15px rgba(83, 104, 120, 0.3);
 }
 
 .nav-cta {
     text-decoration: none; padding: 8px 24px; border-radius: 8px;
     background: var(--gradient-main); color: #fff; font-weight: 600;
     font-size: 0.9rem; transition: var(--transition);
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 15px rgba(83, 104, 120, 0.3);
 }
-.nav-cta:hover { transform: scale(1.05); box-shadow: 0 6px 25px rgba(59, 130, 246, 0.4); }
+.nav-cta:hover { transform: scale(1.05); box-shadow: 0 6px 25px rgba(83, 104, 120, 0.4); }
 
 .hamburger {
     display: none; background: none; border: none;

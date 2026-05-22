@@ -37,6 +37,6 @@
     background: var(--gradient-main); display: flex;
     align-items: center; justify-content: center;
     color: #fff; transition: var(--transition); text-decoration: none;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 15px rgba(83, 104, 120, 0.3);
 }
 .service-link:hover { transform: scale(1.1) rotate(5deg); }

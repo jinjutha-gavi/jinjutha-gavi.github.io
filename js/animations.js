@@ -66,7 +66,7 @@ if (cursorDot && cursorOutline) {
         cursorOutline.animate({
             left: `${posX}px`,
             top: `${posY}px`
-        }, { duration: 500, fill: "forwards" });
+        }, { duration: 80, fill: "forwards" });
     });
 
     const clickables = document.querySelectorAll('a, button, .glass-card, .btn');

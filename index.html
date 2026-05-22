@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JINJUTHA GAVINDARL</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <meta name="description" content="Portfolio of Jinjutha Gavindarl — Creative Developer & Designer specializing in Flutter, Web Development, and UI/UX Design.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -28,7 +29,7 @@
         <div class="nav-inner">
             <div class="logo">
                 <a href="#home" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
-                   <img src="assets/logo.png" height="30px" width="30px">
+                   <img src="assets/shared/logo.png" height="30px" width="30px">
                     <!--<span class="logo-icon">JG.</span>-->
                     <span class="logo-text">JINJUTHA G.</span>
                 </a>
@@ -38,8 +39,8 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="design.html" class="nav-link">Design</a></li>
-                <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+                <li><a href="html/design.html" class="nav-link">Design</a></li>
+                <li><a href="html/certificates.html" class="nav-link">Certificates</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -78,7 +79,7 @@
             <div class="hero-visual animate-in delay-2">
                 <div class="hero-photo-wrapper">
                     <div class="photo-glow"></div>
-                    <img src="assets/profile.png" alt="Jinjutha Gavindarl" class="hero-photo">
+                    <img src="assets/shared/profile.png" alt="Jinjutha Gavindarl" class="hero-photo">
                     <div class="photo-ring"></div>
                 </div>
                 <div class="floating-stat stat-exp">
@@ -126,7 +127,7 @@
                 <div class="about-visual">
                     <div class="glass-card about-card">
                         <div class="about-card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8fa0ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
                                 <path d="M6 18.8V12"/>
                                 <path d="M18 12v6.8a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V12"/>
@@ -137,7 +138,7 @@
                     </div>
                     <div class="glass-card about-card">
                         <div class="about-card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8fa0ae" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M9 18h6" />
                                 <path d="M10 22h4" />
                                 <path d="M15.09 14a8 8 0 1 0-6.18 0" />
@@ -155,7 +156,7 @@
                     </div>
                     <div class="glass-card about-card">
                         <div class="about-card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8fa0ae" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5 21.5 11 21 11H18.5C17.6716 11 17 10.3284 17 9.5V8.5C17 7.5 16 6.5 15 6.5H14C13 6.5 12 5.5 12 4.5V3C12 2.5 11.5 2 11 2C5.47715 2 1 6.47715 1 12C1 17.5228 5.47715 22 12 22Z"/>
                                 <circle cx="7.5" cy="10.5" r="1"/>
                                 <circle cx="11.5" cy="7.5" r="1"/>
@@ -231,7 +232,7 @@
                 <h3 class="section-heading" style="margin-bottom: 10px; font-size: 3rem;">Explore My <span class="gradient-text">Recent Works</span></h3>
                 <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 30px; font-size: 1.15rem; line-height: 1.6;">Showcasing my experience through the Vela app, smart automation tools, and optimized web platforms.</p>
                 
-                <a href="projects.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 18px 45px; border-radius: 50px; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);">
+                <a href="html/projects.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 18px 45px; border-radius: 50px; box-shadow: 0 10px 30px rgba(83, 104, 120, 0.4);">
                     View All Projects
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -253,7 +254,7 @@
 
                     <div class="glass-card skill-category-card">
                         <div class="skill-cat-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8fa0ae" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <rect width="20" height="14" x="2" y="3" rx="2" />
                                 <path d="M12 17v4" />
                                 <path d="M8 21h8" />
@@ -271,7 +272,7 @@
 
                     <div class="glass-card skill-category-card">
                         <div class="skill-cat-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8fa0ae" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
                                 <path d="M12 18h.01" />
                             </svg>
@@ -286,7 +287,7 @@
 
                     <div class="glass-card skill-category-card">
                         <div class="skill-cat-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8fa0ae" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
                                 <circle cx="12" cy="12" r="3" />
                                 <path d="M16 20a2 2 0 1 0 4 0 2 2 0 1 0-4 0z" opacity="0.8" />
@@ -301,7 +302,7 @@
 
                     <div class="glass-card skill-category-card">
                         <div class="skill-cat-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8fa0ae" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                                 <path d="M3.27 6.96L12 12.01l8.73-5.05" />
                                 <path d="M12 22.08V12" />
@@ -346,7 +347,7 @@
                 <h3 class="section-heading" style="margin-bottom: 10px; font-size: 2.5rem;">Graphic & <span class="gradient-text" style="background: linear-gradient(90deg, #ec4899, #8b5cf6); -webkit-background-clip: text;">Design Portfolio</span></h3>
                 <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">Creative design portfolio leveraging a multi-tool approach and integrated design Methodologies.</p>
                 
-                <a href="design.html" class="btn btn-primary" style="background: linear-gradient(90deg, #ec4899, #8b5cf6); box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);">
+                <a href="html/design.html" class="btn btn-primary" style="background: linear-gradient(90deg, #ec4899, #8b5cf6); box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);">
                     View Design Showcase
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -366,7 +367,7 @@
                 <h3 class="section-heading" style="margin-bottom: 10px; font-size: 2.5rem;">My <span class="gradient-text" style="background: linear-gradient(90deg, #fbbf24, #f59e0b); -webkit-background-clip: text;">Certificates</span></h3>
                 <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">A collection of professional certifications demonstrating multi-disciplinary training and continuous skill development.</p>
                 
-                <a href="certificates.html" class="btn btn-primary" style="background: linear-gradient(90deg, #fbbf24, #f59e0b); box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);">
+                <a href="html/certificates.html" class="btn btn-primary" style="background: linear-gradient(90deg, #fbbf24, #f59e0b); box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);">
                     View Certificates
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -375,24 +376,33 @@
     </section>
 
     <!-- ==========================================
-         CONTACT SECTION
+        CONTACT SECTION
     =========================================== -->
     <section id="contact" class="contact" style="padding-top: 150px; padding-bottom: 100px;">
         <div class="section-container">
             <h2 class="section-label" style="text-align:center;">Get in Touch</h2>
             <h3 class="section-heading" style="text-align:center; margin-bottom: 20px;">Let's <span class="gradient-text">Connect</span></h3>
-            <p class="contact-intro">Please feel free to contact me below.</p>
+            <p class="contact-intro" style="text-align:center; margin-bottom: 40px; color: #94a3b8;">Please feel free to contact me below.</p>
 
             <div class="contact-grid">
+                <!-- Email Card -->
                 <a href="mailto:jinjuthagavindarl@gmail.com" class="glass-card contact-card">
-                    <div class="contact-icon">📧</div>
+                    <div class="contact-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
                     <h4>Email</h4>
                     <p>jinjuthagavindarl@gmail.com</p>
+                    <div class="contact-arrow"><i data-lucide="arrow-up-right"></i></div>
                 </a>
+
+                <!-- GitHub Card -->
                 <a href="https://github.com/jinjutha-gavi" target="_blank" class="glass-card contact-card">
-                    <div class="contact-icon">💻</div>
+                    <div class="contact-icon">
+                        <i data-lucide="github"></i>
+                    </div>
                     <h4>GitHub</h4>
                     <p>github.com/jinjutha-gavi</p>
+                    <div class="contact-arrow"><i data-lucide="arrow-up-right"></i></div>
                 </a>
             </div>
         </div>
@@ -417,5 +427,8 @@
 
     <script src="js/navigation.js"></script>
     <script src="js/animations.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

@@ -1,0 +1,640 @@
+/* =============================================
+   PROJECT DETAIL — Dedicated project pages
+   Premium 3D Glassmorphism Design
+   ============================================= */
+
+/* Back Navigation */
+.detail-back-nav {
+    position: fixed;
+    top: 100px;
+    left: 5%;
+    z-index: 100;
+}
+.btn-back-detail {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+}
+.btn-back-detail:hover {
+    background: rgba(83, 104, 120, 0.15);
+    border-color: var(--primary);
+    transform: translateX(-5px);
+}
+
+/* ============ HERO ============ */
+.detail-hero {
+    padding-top: 180px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 1;
+}
+.detail-hero .section-container {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+.detail-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+    background: rgba(83, 104, 120, 0.15);
+    border: 1px solid rgba(83, 104, 120, 0.35);
+    border-radius: 50px;
+    font-size: clamp(0.65rem, 1.2vw, 0.8rem);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-light);
+    margin-bottom: 20px;
+}
+.badge-pulse {
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+    animation: pulse-dot 2s ease-in-out infinite;
+    box-shadow: 0 0 10px var(--primary);
+}
+.detail-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+    color: var(--text-bright);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.detail-subtitle {
+    color: var(--text-dim);
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 550px;
+}
+.detail-hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Hero Image */
+.detail-hero-image {
+    position: relative;
+}
+.image-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(83, 104, 120, 0.35), transparent 70%);
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: 0;
+}
+.detail-image-card {
+    padding: 16px;
+    position: relative;
+    z-index: 1;
+}
+.detail-image-card img {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+}
+
+/* ============ INFO CARDS — 3D Premium ============ */
+.detail-info {
+    padding: 40px 0 80px;
+    position: relative;
+    z-index: 1;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(12px, 2vw, 24px);
+    perspective: 1200px;
+}
+
+/* 3D Info Card */
+.info-card {
+    padding: clamp(20px, 3vw, 36px) clamp(16px, 2.5vw, 28px);
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Luxury shimmer overlay */
+.info-card::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(229, 228, 226, 0.03) 40%,
+        rgba(229, 228, 226, 0.06) 50%,
+        rgba(229, 228, 226, 0.03) 60%,
+        transparent 70%
+    );
+    transform: rotate(0deg);
+    transition: transform 0.8s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.info-card:hover::after {
+    transform: rotate(180deg);
+}
+
+.info-card:hover {
+    transform: translateY(-12px) rotateX(4deg) rotateY(-2deg) scale(1.04);
+    border-color: rgba(143, 160, 174, 0.6);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.4),
+        0 0 40px rgba(83, 104, 120, 0.15),
+        inset 0 1px 0 rgba(229, 228, 226, 0.1);
+}
+
+/* Info Icon — 3D floating effect */
+.info-icon {
+    width: clamp(52px, 5vw, 68px);
+    height: clamp(52px, 5vw, 68px);
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(83, 104, 120, 0.15), rgba(83, 104, 120, 0.05));
+    border: 1px solid rgba(143, 160, 174, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto clamp(12px, 1.5vw, 18px);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25),
+        0 0 15px rgba(83, 104, 120, 0.1),
+        inset 0 1px 0 rgba(229, 228, 226, 0.08);
+    transform: translateZ(30px);
+}
+.info-icon svg,
+.info-icon i {
+    width: clamp(22px, 2.5vw, 28px);
+    height: clamp(22px, 2.5vw, 28px);
+    stroke: var(--primary-light);
+    color: var(--primary-light);
+}
+.info-card:hover .info-icon {
+    transform: translateZ(40px) scale(1.15) rotateY(10deg);
+    background: linear-gradient(135deg, rgba(83, 104, 120, 0.25), rgba(143, 160, 174, 0.1));
+    border-color: rgba(143, 160, 174, 0.5);
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.3),
+        0 0 25px rgba(83, 104, 120, 0.2),
+        inset 0 1px 0 rgba(229, 228, 226, 0.12);
+}
+
+.info-card h4 {
+    font-family: var(--font-display);
+    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: clamp(1px, 0.3vw, 2px);
+    color: var(--primary-light);
+    margin-bottom: 8px;
+}
+.info-card p {
+    color: var(--text-dim);
+    font-size: clamp(0.8rem, 1.4vw, 0.95rem);
+    line-height: 1.5;
+}
+
+/* ============ TECH STACK — 3D Premium ============ */
+.detail-tech {
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(16px, 2.5vw, 28px);
+    perspective: 1400px;
+}
+
+/* 3D Tech Card */
+.tech-card {
+    padding: clamp(24px, 3vw, 40px) clamp(20px, 2.5vw, 32px);
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top edge glow line */
+.tech-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--gradient-main);
+    transition: width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 0 15px rgba(83, 104, 120, 0.3);
+    z-index: 2;
+}
+.tech-card:hover::after {
+    width: 60%;
+}
+
+.tech-card:hover {
+    transform: translateY(-14px) rotateX(3deg) scale(1.03);
+    border-color: rgba(143, 160, 174, 0.5);
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.35),
+        0 0 50px rgba(83, 104, 120, 0.12),
+        inset 0 1px 0 rgba(229, 228, 226, 0.08);
+}
+
+/* Tech Icon — 3D floating cube */
+.tech-icon-wrap {
+    width: clamp(56px, 6vw, 76px);
+    height: clamp(56px, 6vw, 76px);
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(83, 104, 120, 0.12), rgba(83, 104, 120, 0.04));
+    border: 1px solid rgba(143, 160, 174, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto clamp(16px, 2vw, 24px);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateZ(20px);
+    transform-style: preserve-3d;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.2),
+        0 0 15px rgba(83, 104, 120, 0.08),
+        inset 0 1px 0 rgba(229, 228, 226, 0.06);
+}
+.tech-icon-wrap svg,
+.tech-icon-wrap i {
+    width: clamp(24px, 2.8vw, 32px);
+    height: clamp(24px, 2.8vw, 32px);
+    stroke: var(--primary-light) !important;
+    color: var(--primary-light) !important;
+}
+.tech-card:hover .tech-icon-wrap {
+    background: linear-gradient(145deg, rgba(83, 104, 120, 0.2), rgba(143, 160, 174, 0.08));
+    transform: translateZ(35px) scale(1.15) rotateY(-8deg);
+    border-color: rgba(143, 160, 174, 0.45);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 35px rgba(83, 104, 120, 0.2),
+        inset 0 1px 0 rgba(229, 228, 226, 0.1);
+}
+.tech-card h4 {
+    font-family: var(--font-display);
+    font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+    font-weight: 700;
+    color: var(--text-bright);
+    margin-bottom: 10px;
+}
+.tech-card p {
+    color: var(--text-dim);
+    font-size: clamp(0.78rem, 1.3vw, 0.88rem);
+    line-height: 1.6;
+}
+
+/* ============ KEY FEATURES — 3D Premium ============ */
+.detail-features {
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(16px, 2.5vw, 28px);
+    perspective: 1400px;
+}
+
+/* 3D Feature Card */
+.feature-card {
+    padding: clamp(28px, 3vw, 42px) clamp(22px, 2.5vw, 34px);
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+/* Diagonal accent stripe */
+.feature-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, transparent 50%, rgba(83, 104, 120, 0.06) 50%);
+    transition: all 0.5s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+.feature-card:hover::after {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, transparent 50%, rgba(83, 104, 120, 0.12) 50%);
+}
+
+.feature-card:hover {
+    transform: translateY(-12px) rotateX(3deg) rotateY(2deg) scale(1.02);
+    border-color: rgba(143, 160, 174, 0.5);
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.35),
+        0 0 40px rgba(83, 104, 120, 0.1),
+        inset 0 1px 0 rgba(229, 228, 226, 0.08);
+}
+
+/* Feature number — large 3D watermark */
+.feature-number {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    background: linear-gradient(
+        135deg,
+        rgba(143, 160, 174, 0.5),
+        rgba(83, 104, 120, 0.3),
+        rgba(229, 228, 226, 0.15)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: clamp(12px, 1.5vw, 20px);
+    transition: all 0.4s ease;
+    text-shadow: none;
+    transform: translateZ(15px);
+}
+.feature-card:hover .feature-number {
+    background: linear-gradient(
+        135deg,
+        rgba(143, 160, 174, 0.7),
+        rgba(83, 104, 120, 0.5),
+        rgba(229, 228, 226, 0.3)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: translateZ(25px) scale(1.05);
+}
+
+.feature-card h4 {
+    font-family: var(--font-display);
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    font-weight: 700;
+    color: var(--text-bright);
+    margin-bottom: 10px;
+}
+.feature-card p {
+    color: var(--text-dim);
+    font-size: clamp(0.8rem, 1.3vw, 0.9rem);
+    line-height: 1.7;
+}
+
+/* ============ ARCHITECTURE ============ */
+.detail-architecture {
+    padding: 80px 0 100px;
+    position: relative;
+    z-index: 1;
+}
+.architecture-card {
+    padding: clamp(30px, 4vw, 50px) clamp(20px, 3vw, 30px);
+    text-align: center;
+}
+.arch-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(10px, 1.5vw, 16px);
+    flex-wrap: wrap;
+}
+.arch-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: clamp(14px, 2vw, 20px) clamp(16px, 2.5vw, 24px);
+    background: rgba(83, 104, 120, 0.08);
+    border: 1px solid rgba(83, 104, 120, 0.25);
+    border-radius: 16px;
+    min-width: clamp(90px, 12vw, 120px);
+    transition: all 0.3s ease;
+}
+.arch-node:hover {
+    background: rgba(83, 104, 120, 0.15);
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(83, 104, 120, 0.2);
+}
+.arch-icon {
+    font-size: 2rem;
+}
+.arch-icon svg,
+.arch-icon i {
+    stroke: var(--primary-light);
+    color: var(--primary-light);
+}
+.arch-node span {
+    font-family: var(--font-display);
+    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+    font-weight: 600;
+    color: var(--text-main);
+    white-space: nowrap;
+}
+.arch-arrow {
+    flex-shrink: 0;
+    animation: arrowPulse 2s ease-in-out infinite;
+}
+.arch-arrow svg {
+    width: clamp(28px, 3vw, 40px);
+    height: auto;
+}
+@keyframes arrowPulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* Force all Lucide icons on this page to use theme colors */
+[data-lucide] {
+    stroke: var(--primary-light) !important;
+    color: var(--primary-light) !important;
+}
+
+/* ============ RESPONSIVE — All Devices ============ */
+
+/* Large desktop (1440px+) — stretch cards elegantly */
+@media (min-width: 1440px) {
+    .info-grid { gap: 28px; }
+    .tech-stack-grid { gap: 32px; }
+    .features-grid { gap: 32px; }
+}
+
+/* Tablet landscape / small desktop (1024–1279px) */
+@media (max-width: 1280px) {
+    .info-grid { grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .tech-stack-grid { grid-template-columns: repeat(3, 1fr); }
+    .features-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Tablet portrait (768–1024px) — iPad */
+@media (max-width: 1024px) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .tech-stack-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .detail-hero .section-container {
+        gap: 40px;
+    }
+}
+
+/* Mobile landscape / large phones (481–768px) */
+@media (max-width: 768px) {
+    .detail-back-nav { top: 80px; }
+    .btn-back-detail {
+        padding: 10px 18px;
+        font-size: 0.78rem;
+    }
+    .detail-hero {
+        padding-top: 140px;
+        padding-bottom: 50px;
+    }
+    .detail-hero .section-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    .detail-hero-content { order: 2; }
+    .detail-hero-image { order: 1; }
+    .detail-subtitle { max-width: 100%; }
+    .detail-hero-actions { justify-content: center; }
+    .detail-info {
+        padding: 20px 0 50px;
+    }
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+    .tech-stack-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .detail-tech,
+    .detail-features {
+        padding: 50px 0;
+    }
+    .arch-flow { flex-direction: column; }
+    .arch-arrow { transform: rotate(90deg); }
+    .detail-architecture {
+        padding: 50px 0 60px;
+    }
+}
+
+/* Small phones (≤480px) */
+@media (max-width: 480px) {
+    .detail-back-nav {
+        top: 70px;
+        left: 3%;
+    }
+    .btn-back-detail {
+        padding: 8px 14px;
+        font-size: 0.72rem;
+        gap: 6px;
+    }
+    .btn-back-detail svg {
+        width: 16px;
+        height: 16px;
+    }
+    .detail-hero {
+        padding-top: 120px;
+        padding-bottom: 30px;
+    }
+    .detail-badge {
+        padding: 6px 14px;
+        letter-spacing: 1px;
+    }
+    .detail-info {
+        padding: 10px 0 40px;
+    }
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .info-card {
+        padding: 18px 12px;
+    }
+    .tech-stack-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .tech-card {
+        padding: 24px 18px;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .feature-card {
+        padding: 24px 18px;
+    }
+    .detail-tech,
+    .detail-features {
+        padding: 40px 0;
+    }
+    .architecture-card {
+        padding: 24px 14px;
+    }
+    .arch-node {
+        min-width: 80px;
+        padding: 12px 14px;
+    }
+}
+
+/* Ultra-small phones (≤360px) */
+@media (max-width: 360px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .info-card {
+        padding: 16px 12px;
+    }
+}
