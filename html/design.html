@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Portfolio — Jinjutha Gavindarl</title>
+    <title>Design Gallery</title>
+    <meta name="description" content="Graphic and visual design portfolio gallery by Jinjutha Gavindarl.">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/design.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Custom Cursor -->
     <div class="cursor-dot" id="cursor-dot"></div>
     <div class="cursor-outline" id="cursor-outline"></div>
-    <div class="bg-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
-    
-    <!-- Navbar -->
+    <div class="bg-orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+
     <nav class="navbar" id="navbar">
         <div class="nav-inner">
             <div class="logo">
-                <a href="../index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
-                    <img src="../assets/shared/logo.png" height="30px" width="30px">
+                <a href="../index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+                    <img src="../assets/shared/logo.png" height="30" width="30">
                     <span class="logo-text">JINJUTHA</span>
                 </a>
             </div>
@@ -34,13 +29,10 @@
                 <li><a href="certificates.html" class="nav-link">Certificates</a></li>
                 <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
             </ul>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
         </div>
     </nav>
 
-    <!-- Back Button -->
     <div class="back-nav">
         <a href="../index.html" class="btn-back">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
@@ -48,56 +40,174 @@
         </a>
     </div>
 
-    <section class="skills" style="padding-top: 180px; min-height: 100vh;">
+    <section class="design-gallery" style="padding-top:180px;min-height:100vh;padding-bottom:80px;">
         <div class="section-container">
-            <h2 class="section-label" style="text-align: center;">Creative Playground</h2>
-            <h3 class="section-heading" style="text-align:center; margin-bottom: 60px;">Graphic & <span class="gradient-text">Design Skills</span></h3>
+            <div class="design-header">
+                <h2 class="section-label" style="text-align:center;">Creative Playground</h2>
+                <h3 class="section-heading" style="text-align:center;">Design <span class="gradient-text">Gallery</span></h3>
+                <p class="design-subtitle">Graphic Design, Artwork, UX/UI Design, etc.</p>
+            </div>
 
-            <div class="skills-orbit">
-                <div class="skills-categories design-skills-container">
-                    <div class="glass-card skill-category-card design-category-card">
-                        <div class="skill-cat-icon">🎨</div>
-                        <h4>Creative Toolkit</h4>
-                        <div class="skill-tags">
-                            <span class="skill-pill">Figma</span>
-                            <span class="skill-pill">Adobe Illustrator</span>
-                            <span class="skill-pill">Photoshop</span>
-                        </div>
-                        <div class="skill-bar-wrap">
-                            <div class="skill-bar-bg"><div class="skill-bar-fill design-bar-fill"></div></div>
-                        </div>
-                        <p class="design-category-desc">Proficient in creating beautiful user interfaces, vector illustrations, and digital graphics that elevate the user experience.</p>
+            <!-- ══════ SECTION 1: Hero Spread ══════ -->
+            <div class="mag-section mag-reveal">
+                <div class="mag-section-header">
+                    <span class="mag-section-number">01</span>
+                    <div class="mag-section-title-wrap"><h4 class="mag-section-title">UI / UX Design</h4></div>
+                    <div class="mag-section-line"></div>
+                </div>
+                <div class="grid-hero-spread">
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-grid"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <span class="mag-item-tag">Hero</span>
+                        <div class="mag-overlay"><h5>Mobile App UI</h5><p>Interface concept</p></div>
+                    </div>
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-dots"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Dashboard Design</h5><p>Web UI</p></div>
+                    </div>
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-diagonal"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Component Library</h5><p>Design system</p></div>
                     </div>
                 </div>
             </div>
-            
-            <h3 class="section-heading design-showcase-heading">Design Showcase</h3>
-            <div class="design-showcase-grid">
-                <!-- Showcase Item 1 -->
-                <div class="glass-card design-card">
-                    <img src="../assets/design/ui_ux.png" alt="UI/UX Design Showcase" class="design-image">
-                    <h4>UI/UX Mobile App Design</h4>
-                    <p>Mobile and web interface design with a focus on accessibility and modern glassmorphism aesthetics.</p>
+
+            <!-- ══════ SECTION 2: Mosaic ══════ -->
+            <div class="mag-section mag-reveal">
+                <div class="mag-section-header">
+                    <span class="mag-section-number">02</span>
+                    <div class="mag-section-title-wrap"><h4 class="mag-section-title">Branding & Identity</h4></div>
+                    <div class="mag-section-line"></div>
                 </div>
-                
-                <!-- Showcase Item 2 -->
-                <div class="glass-card design-card">
-                    <img src="../assets/design/vector.png" alt="Vector Illustrations" class="design-image">
-                    <h4>Digital Vector Illustrations</h4>
-                    <p>Custom illustrations and iconography designed from scratch using Adobe Illustrator.</p>
-                </div>
-                
-                <!-- Showcase Item 3 -->
-                <div class="glass-card design-card">
-                    <img src="../assets/design/branding.png" alt="Brand Identity" class="design-image">
-                    <h4>Corporate Brand Identity</h4>
-                    <p>Logo design, color palettes, and typography selection to build strong, memorable brands.</p>
+                <div class="grid-mosaic">
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-hex"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Logo Design</h5><p>Brand mark</p></div>
+                    </div>
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-waves"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Color Palette</h5><p>Brand identity</p></div>
+                    </div>
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-circles"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <span class="mag-item-tag">Branding</span>
+                        <div class="mag-overlay"><h5>Brand Guidelines</h5><p>Typography & colors</p></div>
+                    </div>
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-cross"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Packaging Design</h5><p>Product branding</p></div>
+                    </div>
                 </div>
             </div>
+
+            <!-- ══════ CINEMATIC QUOTE BREAK ══════ -->
+            <div class="mag-quote-break mag-reveal">
+                <p class="mag-quote-text">Design is not just what it looks like — design is how it works.</p>
+                <span class="mag-quote-attr">— Steve Jobs</span>
+            </div>
+
+            <!-- ══════ SECTION 3: Cinematic Banner ══════ -->
+            <div class="mag-section mag-reveal">
+                <div class="mag-section-header">
+                    <span class="mag-section-number">03</span>
+                    <div class="mag-section-title-wrap"><h4 class="mag-section-title">Cinematic Showcase</h4></div>
+                    <div class="mag-section-line"></div>
+                </div>
+                <div class="grid-cinematic">
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-waves"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <span class="mag-item-tag">Featured</span>
+                        <div class="mag-overlay"><h5>Landing Page Design</h5><p>Full-width showcase</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════ SECTION 4: Offset Staggered ══════ -->
+            <div class="mag-section mag-reveal">
+                <div class="mag-section-header">
+                    <span class="mag-section-number">04</span>
+                    <div class="mag-section-title-wrap"><h4 class="mag-section-title">Illustrations</h4></div>
+                    <div class="mag-section-line"></div>
+                </div>
+                <div class="grid-offset">
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-grid"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Vector Art</h5><p>Digital illustration</p></div>
+                    </div>
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-dots"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Character Design</h5><p>Illustration</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════ SECTION 5: Triple Equal ══════ -->
+            <div class="mag-section mag-reveal">
+                <div class="mag-section-header">
+                    <span class="mag-section-number">05</span>
+                    <div class="mag-section-title-wrap"><h4 class="mag-section-title">Infographic & Media</h4></div>
+                    <div class="mag-section-line"></div>
+                </div>
+                <div class="grid-triple">
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-cross"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Infographic</h5><p>Data visualization</p></div>
+                    </div>
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-hex"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Social Media</h5><p>Content design</p></div>
+                    </div>
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-noise"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Poster Design</h5><p>Print media</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════ SECTION 6: Reverse Hero ══════ -->
+            <div class="mag-section mag-reveal">
+                <div class="mag-section-header">
+                    <span class="mag-section-number">06</span>
+                    <div class="mag-section-title-wrap"><h4 class="mag-section-title">Photo Manipulation</h4></div>
+                    <div class="mag-section-line"></div>
+                </div>
+                <div class="grid-hero-reverse">
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-diagonal"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Photo Edit</h5><p>Retouching</p></div>
+                    </div>
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-circles"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <div class="mag-overlay"><h5>Composite Art</h5><p>Digital art</p></div>
+                    </div>
+                    <div class="mag-item">
+                        <div class="mag-placeholder pat-waves"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div>
+                        <span class="mag-item-tag">Showcase</span>
+                        <div class="mag-overlay"><h5>Creative Retouch</h5><p>Photo manipulation</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════ SECTION 7: Masonry ══════ -->
+            <div class="mag-section mag-reveal">
+                <div class="mag-section-header">
+                    <span class="mag-section-number">07</span>
+                    <div class="mag-section-title-wrap"><h4 class="mag-section-title">More Works</h4></div>
+                    <div class="mag-section-line"></div>
+                </div>
+                <div class="grid-masonry">
+                    <div class="mag-item"><div class="mag-placeholder h-lg pat-grid"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div><div class="mag-caption-below"><h5>Mockup Design</h5><p>Presentation</p></div></div>
+                    <div class="mag-item"><div class="mag-placeholder h-sm pat-dots"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div><div class="mag-caption-below"><h5>Icon Set</h5><p>Iconography</p></div></div>
+                    <div class="mag-item"><div class="mag-placeholder h-md pat-hex"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div><div class="mag-caption-below"><h5>Typography</h5><p>Type exploration</p></div></div>
+                    <div class="mag-item"><div class="mag-placeholder h-md pat-waves"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div><div class="mag-caption-below"><h5>Wireframe</h5><p>UX flow</p></div></div>
+                    <div class="mag-item"><div class="mag-placeholder h-xl pat-diagonal"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div><div class="mag-caption-below"><h5>Banner Design</h5><p>Marketing</p></div></div>
+                    <div class="mag-item"><div class="mag-placeholder h-sm pat-cross"><div class="mag-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Your Image</span></div></div><div class="mag-caption-below"><h5>Sticker Pack</h5><p>Fun graphics</p></div></div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-logo">JG<span>.</span></div>
@@ -107,5 +217,13 @@
 
     <script src="../js/navigation.js"></script>
     <script src="../js/animations.js"></script>
+    <script>
+        // Scroll reveal observer
+        const revealEls = document.querySelectorAll('.mag-reveal');
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        revealEls.forEach(el => revealObs.observe(el));
+    </script>
 </body>
 </html>

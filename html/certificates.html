@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates — Jinjutha Gavindarl</title>
+    <title>Certificates</title>
+    <meta name="description" content="Professional certificates and achievements by Jinjutha Gavindarl — CEFR English, Cybersecurity, and Digital Media awards.">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/certificates.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -51,39 +52,92 @@
     <!-- Certificates Section -->
     <section class="certificates" style="padding-top: 180px; min-height: 100vh;">
         <div class="section-container">
-            <h2 class="section-label" style="text-align: center;">Achievements</h2>
-            <h3 class="section-heading" style="text-align:center; margin-bottom: 60px;">My <span class="gradient-text">Certificates</span></h3>
+            <div class="cert-header">
+                <h2 class="section-label">Achievements</h2>
+                <h3 class="section-heading">My <span class="gradient-text">Certificates</span></h3>
+                <p class="cert-subtitle">A collection of professional certifications and achievements earned through dedicated learning and skill development.</p>
+            </div>
 
-            <div class="cert-grid">
-                <!-- Google UI/UX Cert -->
-                <div class="glass-card cert-card cert-uiux">
-                    <img src="../assets/certificates/ui_ux.png" alt="Google UI/UX Certificate" class="cert-image">
-                    <h4>Advanced UI/UX Design</h4>
-                    <p class="cert-issuer">Google</p>
-                    <p class="cert-desc">Comprehensive training in user experience, wireframing, prototyping, and design systems using Figma.</p>
-                    <span class="cert-date">Issued: May 2025</span>
+            <div class="cert-timeline">
+                <!-- Certificate 1 — Speexx -->
+                <div class="cert-timeline-item">
+                    <div class="glass-card cert-card" id="cert-speexx">
+                        <div class="cert-image-wrap" onclick="openCertLightbox('../assets/certificates/speexx.jpg')">
+                            <img src="../assets/certificates/speexx.jpg" alt="CEFR English B1.1 Certificate — Speexx" class="cert-image" loading="lazy">
+                            <div class="cert-zoom-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <div class="cert-info-header">
+                                <h4>CEFR English B1.1 Language Training Course</h4>
+                                <span class="cert-date-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    18/09/2025
+                                </span>
+                            </div>
+                            <p class="cert-issuer">Speexx</p>
+                            <p class="cert-desc">Successfully completed the Speexx English B1.1 language training course, aligned with the Common European Framework of Reference for Languages (CEFR). Achieved a perfect score of 100/100 through dedicated self-study.</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Flutter Cert -->
-                <div class="glass-card cert-card cert-flutter">
-                    <img src="../assets/certificates/flutter.png" alt="Flutter Certificate" class="cert-image">
-                    <h4>Flutter Developer Bootcamp</h4>
-                    <p class="cert-issuer">App Brewery</p>
-                    <p class="cert-desc">Mastered Dart, state management, and Firebase integration for building cross-platform applications.</p>
-                    <span class="cert-date">Issued: Dec 2024</span>
+                <!-- Certificate 2 — Cybersecurity -->
+                <div class="cert-timeline-item">
+                    <div class="glass-card cert-card" id="cert-cyber">
+                        <div class="cert-image-wrap" onclick="openCertLightbox('../assets/certificates/cyber.png')">
+                            <img src="../assets/certificates/cyber.png" alt="Cybersecurity Foundation Course Certificate — NCSA Thailand" class="cert-image" loading="lazy">
+                            <div class="cert-zoom-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <div class="cert-info-header">
+                                <h4>Cybersecurity Foundation Course</h4>
+                                <span class="cert-date-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    08/03/2026
+                                </span>
+                            </div>
+                            <p class="cert-issuer">NCSA Thailand</p>
+                            <p class="cert-desc">Successfully completed 21 hours of foundational cybersecurity training under the National Cyber Security Agency (NCSA) e-Learning program, establishing a strong understanding of core security principles and digital defense.</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- UiPath RPA Associate Cert -->
-                <div class="glass-card cert-card cert-rpa">
-                    <img src="../assets/certificates/rpa.png" alt="UiPath Certificate" class="cert-image">
-                    <h4>RPA Associate Certification</h4>
-                    <p class="cert-issuer">UiPath Academy</p>
-                    <p class="cert-desc">Certified in enterprise automation workflows, error handling, and orchestrator deployment.</p>
-                    <span class="cert-date">Issued: Aug 2025</span>
+                <!-- Certificate 3 — CRA DigiFam -->
+                <div class="cert-timeline-item">
+                    <div class="glass-card cert-card" id="cert-cra">
+                        <div class="cert-image-wrap" onclick="openCertLightbox('../assets/certificates/cra.png')">
+                            <img src="../assets/certificates/cra.png" alt="DigiFam Awards Participant Certificate — Chulabhorn Royal Academy" class="cert-image" loading="lazy">
+                            <div class="cert-zoom-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <div class="cert-info-header">
+                                <h4>DigiFam Awards #4 Participant Certificate (Infographic Media Category)</h4>
+                                <span class="cert-date-badge">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    25/10/2023
+                                </span>
+                            </div>
+                            <p class="cert-issuer">Chulabhorn Royal Academy</p>
+                            <p class="cert-desc">A certificate of participation from the 4th DigiFam Awards (Infographic Media Category) by Chulabhorn Royal Academy, recognizing the creation of digital content aimed at fostering a safe and constructive online community.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Lightbox / Modal for full-size certificate viewing -->
+    <div class="cert-lightbox" id="certLightbox" onclick="closeCertLightbox(event)">
+        <button class="cert-lightbox-close" onclick="closeCertLightbox(event)" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <img id="certLightboxImg" src="" alt="Certificate full view">
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -95,5 +149,34 @@
 
     <script src="../js/navigation.js"></script>
     <script src="../js/animations.js"></script>
+    <script>
+        // Lightbox functionality
+        function openCertLightbox(src) {
+            const lightbox = document.getElementById('certLightbox');
+            const img = document.getElementById('certLightboxImg');
+            img.src = src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCertLightbox(e) {
+            const lightbox = document.getElementById('certLightbox');
+            const img = document.getElementById('certLightboxImg');
+            // Only close if clicking outside the image or on the close button
+            if (e.target === lightbox || e.target.closest('.cert-lightbox-close')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const lightbox = document.getElementById('certLightbox');
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
 </body>
 </html>
