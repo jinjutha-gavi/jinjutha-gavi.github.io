@@ -30,7 +30,14 @@
     .hero-quote { justify-content: center; }
     .hero-actions { justify-content: center; }
     .hero-photo-wrapper { width: 260px; height: 260px; }
-    .floating-stat { display: none; }
+    .floating-stat {
+        padding: 10px 14px;
+        border-radius: 12px;
+    }
+    .stat-exp { bottom: 15px; left: -15px; }
+    .stat-projects { top: 15px; right: -15px; }
+    .stat-number { font-size: 1.1rem; }
+    .stat-label { font-size: 0.65rem; }
 
     /* About */
     .about-grid { grid-template-columns: 1fr; }
@@ -107,13 +114,18 @@
     .hero-actions { gap: 10px; }
     .btn { padding: 12px 24px; font-size: 0.85rem; letter-spacing: 0.5px; }
 
-    /* Floating stats — tighter on phone */
-    .floating-stat { padding: 10px 14px; border-radius: 10px; }
-    .stat-exp { bottom: 10px; left: -10px; }
-    .stat-projects { top: 10px; right: -10px; }
-    .stat-number { font-size: 1.2rem; }
-    .stat-label { font-size: 0.6rem; }
-    .stat-stars { font-size: 0.55rem; letter-spacing: 1px; }
+    /* Floating stats — super compact and clean for mobile */
+    .floating-stat {
+        padding: 6px 10px;
+        border-radius: 8px;
+        max-width: 130px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    .stat-exp { bottom: 5px; left: -15px; }
+    .stat-projects { top: 5px; right: -15px; }
+    .stat-number { font-size: 0.8rem; font-weight: 700; line-height: 1.2; }
+    .stat-label { display: none; } /* Hide long labels to keep it tiny */
+    .stat-stars { font-size: 0.5rem; letter-spacing: 0.5px; margin-bottom: 1px; }
 
     /* Section headers */
     .section-label { font-size: 0.65rem; letter-spacing: 2px; margin-bottom: 8px; }
