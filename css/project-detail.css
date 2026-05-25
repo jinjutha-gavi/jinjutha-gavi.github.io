@@ -524,7 +524,10 @@
 
 /* Mobile landscape / large phones (481–768px) */
 @media (max-width: 768px) {
-    .detail-back-nav { top: 80px; }
+    .detail-back-nav {
+        position: absolute;
+        top: 80px;
+    }
     .btn-back-detail {
         padding: 10px 18px;
         font-size: 0.78rem;

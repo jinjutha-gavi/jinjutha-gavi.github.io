@@ -140,5 +140,8 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(-5px);
 }
 @media (max-width: 768px) {
-    .back-nav { top: 80px; }
+    .back-nav {
+        position: absolute;
+        top: 80px;
+    }
 }
