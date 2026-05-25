@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/design.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <div class="cursor-dot" id="cursor-dot"></div>
@@ -63,7 +65,7 @@
 
 
             <!-- ═══════════════════════════════════════
-                 SECTION 01 — UI / UX Design
+                 SECTION 01 — UI / UX Design (Coverflow Carousel)
                  ═══════════════════════════════════════ -->
             <div class="mag-section mag-reveal" id="section-uxui">
                 <div class="mag-section-header">
@@ -71,16 +73,21 @@
                     <div class="mag-section-title-wrap"><h4 class="mag-section-title">UI / UX Design</h4></div>
                     <div class="mag-section-line"></div>
                 </div>
-                <div class="editorial-masonry-2">
-                    <div class="flow-img glass-frame"><img src="../assets/design/uxui/uxuilogin.png" alt="Login UI" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/uxui/uxuicheckout.png" alt="Checkout UI" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/uxui/uxuiapp.png" alt="Mobile UI Concept" loading="lazy"></div>
+                <div class="swiper-showcase">
+                    <div class="swiper swiper-coverflow" id="swiperUxui">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../assets/design/uxui/uxuilogin.png" alt="Login UI" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/uxui/uxuicheckout.png" alt="Checkout UI" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/uxui/uxuiapp.png" alt="Mobile UI Concept" loading="lazy"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
 
 
             <!-- ═══════════════════════════════════════
-                 SECTION 02 — Branding & Packaging — Frixi
+                 SECTION 02 — Branding & Packaging — Frixi (Creative Effect Carousel)
                  ═══════════════════════════════════════ -->
             <div class="mag-section mag-reveal" id="section-frixi">
                 <div class="mag-section-header">
@@ -89,9 +96,7 @@
                     <div class="mag-section-line"></div>
                 </div>
 
-                <!-- Logo and Cream Tube paired nicely -->
-
-                <!-- 3D Box Render - Dedicated Standalone Showcase for massive size! -->
+                <!-- 3D Box Render - Dedicated Standalone Showcase -->
                 <div class="png-showcase-single">
                     <div class="png-float-card glow-slate massive-box-card" id="frixi-box-card">
                         <div class="png-glow"></div>
@@ -110,13 +115,21 @@
                     </div>
                 </div>
 
-                <div class="editorial-masonry-3">
-                    <div class="flow-img glass-frame"><img src="../assets/design/frixi/1.jpg" alt="Frixi Face Shots" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/frixi/2.jpg" alt="Frixi Product Tube" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/frixi/3.jpg" alt="Frixi Cream Box" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/frixi/4.jpg" alt="Frixi Label Specifications" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/frixi/5.jpg" alt="Frixi Graphics" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/frixi/7.jpg" alt="Frixi Brand Showcase" loading="lazy"></div>
+                <!-- Frixi Gallery — Creative Effect Carousel -->
+                <div class="swiper-showcase">
+                    <div class="swiper swiper-creative" id="swiperFrixi">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../assets/design/frixi/1.jpg" alt="Frixi Face Shots" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/frixi/2.jpg" alt="Frixi Product Tube" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/frixi/3.jpg" alt="Frixi Cream Box" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/frixi/4.jpg" alt="Frixi Label Specifications" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/frixi/5.jpg" alt="Frixi Graphics" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/frixi/7.jpg" alt="Frixi Brand Showcase" loading="lazy"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
             </div>
 
@@ -170,12 +183,13 @@
                 <div class="editorial-masonry-2">
                     <div class="flow-img glass-frame"><img src="../assets/design/postcard/pc1.jpg" alt="Congratulations Postcard" loading="lazy"></div>
                     <div class="flow-img glass-frame"><img src="../assets/design/postcard/pc2.png" alt="Anime Postcard Design" loading="lazy"></div>
+                    <div class="flow-img glass-frame"><img src="../assets/design/artwork/aw5.png" alt="Digital Artwork 5" loading="lazy"></div>
                 </div>
             </div>
 
 
             <!-- ═══════════════════════════════════════
-                 SECTION 05 — Digital Scrapbook
+                 SECTION 05 — Digital Scrapbook (Cards Effect Carousel)
                  ═══════════════════════════════════════ -->
             <div class="mag-section mag-reveal" id="section-scrapbook">
                 <div class="mag-section-header">
@@ -184,22 +198,30 @@
                     <div class="mag-section-line"></div>
                 </div>
 
-                <!-- Part 1: Collage Series (3 landscape spreads: a, b, c) -->
-                <div class="editorial-masonry-3">
-                    <div class="flow-img glass-frame"><img src="../assets/design/digital_scrapbook/a.png" alt="2025 Wrapped" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/digital_scrapbook/b.png" alt="Scrapbook B" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/digital_scrapbook/c.png" alt="Scrapbook C" loading="lazy"></div>
+                <!-- Part 1: Collage Series — Coverflow -->
+                <div class="swiper-showcase">
+                    <div class="swiper swiper-coverflow" id="swiperScrapCollage">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../assets/design/digital_scrapbook/a.png" alt="2025 Wrapped" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/digital_scrapbook/b.png" alt="Scrapbook B" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/digital_scrapbook/c.png" alt="Scrapbook C" loading="lazy"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
 
-                <!-- Visual Separator Space instead of Text -->
                 <div style="height: 48px;"></div>
 
-                <!-- Part 2: Creative Textured Spreads (4 canvas layouts: 1, 2, 3, 4) -->
-                <div class="editorial-masonry-2">
-                    <div class="flow-img glass-frame"><img src="../assets/design/digital_scrapbook/1.png" alt="Scrapbook Page 1" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/digital_scrapbook/2.png" alt="Scrapbook Page 2" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/digital_scrapbook/3.png" alt="Scrapbook Page 3" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/digital_scrapbook/4.png" alt="Scrapbook Page 4" loading="lazy"></div>
+                <!-- Part 2: Creative Textured Spreads — Cards Effect -->
+                <div class="swiper-showcase swiper-cards-wrap">
+                    <div class="swiper swiper-cards-effect" id="swiperScrapCards">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../assets/design/digital_scrapbook/1.png" alt="Scrapbook Page 1" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/digital_scrapbook/2.png" alt="Scrapbook Page 2" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/digital_scrapbook/3.png" alt="Scrapbook Page 3" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/digital_scrapbook/4.png" alt="Scrapbook Page 4" loading="lazy"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -221,7 +243,7 @@
                     <div class="mag-section-line"></div>
                 </div>
 
-                <!-- Shirt Renders PNG (No Labels under images) -->
+                <!-- Shirt Renders PNG -->
                 <div class="png-showcase-row shirt-renders mb-gap">
                     <div class="png-float-card glow-slate" id="shirt-front">
                         <div class="png-glow"></div>
@@ -233,12 +255,19 @@
                     </div>
                 </div>
 
-                <!-- Shirt Design specs -->
-                <div class="editorial-masonry-2">
-                    <div class="flow-img glass-frame"><img src="../assets/design/shirt/s1.jpg" alt="BUU Polo Design 1" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/shirt/s2.jpg" alt="BUU Polo Design 2" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/shirt/s3.jpg" alt="BUU Polo Design 3" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/shirt/s4.jpg" alt="BUU Polo Design 4" loading="lazy"></div>
+                <!-- Shirt Design specs — Creative Carousel -->
+                <div class="swiper-showcase">
+                    <div class="swiper swiper-creative" id="swiperShirt">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../assets/design/shirt/s1.jpg" alt="BUU Polo Design 1" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/shirt/s2.jpg" alt="BUU Polo Design 2" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/shirt/s3.jpg" alt="BUU Polo Design 3" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/shirt/s4.jpg" alt="BUU Polo Design 4" loading="lazy"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
             </div>
 
@@ -259,7 +288,7 @@
 
 
             <!-- ═══════════════════════════════════════
-                 SECTION 08 — Digital Artwork
+                 SECTION 08 — Digital Artwork (Coverflow Carousel)
                  ═══════════════════════════════════════ -->
             <div class="mag-section mag-reveal" id="section-artwork">
                 <div class="mag-section-header">
@@ -267,11 +296,16 @@
                     <div class="mag-section-title-wrap"><h4 class="mag-section-title">Digital Artwork</h4></div>
                     <div class="mag-section-line"></div>
                 </div>
-                <div class="editorial-masonry-2">
-                    <div class="flow-img glass-frame"><img src="../assets/design/artwork/aw1.png" alt="Food Illustration — Croque Madame" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/artwork/aw2.png" alt="Chocolate Cake Illustration" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/artwork/aw3.png" alt="Cherry Lips Illustration" loading="lazy"></div>
-                    <div class="flow-img glass-frame"><img src="../assets/design/artwork/aw4.png" alt="Eyes Digital Painting" loading="lazy"></div>
+                <div class="swiper-showcase">
+                    <div class="swiper swiper-coverflow" id="swiperArtwork">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../assets/design/artwork/aw1.png" alt="Food Illustration — Croque Madame" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/artwork/aw2.png" alt="Chocolate Cake Illustration" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/artwork/aw3.png" alt="Cherry Lips Illustration" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="../assets/design/artwork/aw4.png" alt="Eyes Digital Painting" loading="lazy"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
 
@@ -287,6 +321,8 @@
 
     <script src="../js/navigation.js"></script>
     <script src="../js/animations.js"></script>
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         // Scroll reveal observer
         const revealEls = document.querySelectorAll('.mag-reveal');
@@ -310,6 +346,105 @@
             card.addEventListener('mouseleave', () => {
                 card.style.transform = '';
             });
+        });
+
+        // ═══════════════════════════════════════
+        // SWIPER INITIALIZATIONS
+        // ═══════════════════════════════════════
+
+        // Section 01 — UI/UX: Coverflow
+        new Swiper('#swiperUxui', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            coverflowEffect: {
+                rotate: 35,
+                stretch: 0,
+                depth: 120,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: { el: '#swiperUxui .swiper-pagination', clickable: true },
+            autoplay: { delay: 3000, disableOnInteraction: true },
+        });
+
+        // Section 02 — Frixi: Creative Effect
+        new Swiper('#swiperFrixi', {
+            effect: 'creative',
+            grabCursor: true,
+            loop: true,
+            creativeEffect: {
+                prev: { shadow: true, translate: [0, 0, -400] },
+                next: { translate: ['100%', 0, 0] },
+            },
+            pagination: { el: '#swiperFrixi .swiper-pagination', clickable: true },
+            navigation: {
+                nextEl: '#swiperFrixi .swiper-button-next',
+                prevEl: '#swiperFrixi .swiper-button-prev',
+            },
+            autoplay: { delay: 2500, disableOnInteraction: true },
+        });
+
+        // Section 05a — Scrapbook Collage: Coverflow
+        new Swiper('#swiperScrapCollage', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            coverflowEffect: {
+                rotate: 30,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: { el: '#swiperScrapCollage .swiper-pagination', clickable: true },
+        });
+
+        // Section 05b — Scrapbook Pages: Cards Effect
+        new Swiper('#swiperScrapCards', {
+            effect: 'cards',
+            grabCursor: true,
+            loop: true,
+            cardsEffect: { perSlideOffset: 8, perSlideRotate: 2, rotate: true },
+        });
+
+        // Section 06 — Shirt: Creative Effect
+        new Swiper('#swiperShirt', {
+            effect: 'creative',
+            grabCursor: true,
+            loop: true,
+            creativeEffect: {
+                prev: { shadow: true, translate: [0, 0, -400] },
+                next: { translate: ['100%', 0, 0] },
+            },
+            pagination: { el: '#swiperShirt .swiper-pagination', clickable: true },
+            navigation: {
+                nextEl: '#swiperShirt .swiper-button-next',
+                prevEl: '#swiperShirt .swiper-button-prev',
+            },
+            autoplay: { delay: 2800, disableOnInteraction: true },
+        });
+
+        // Section 08 — Artwork: Coverflow
+        new Swiper('#swiperArtwork', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            coverflowEffect: {
+                rotate: 40,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: { el: '#swiperArtwork .swiper-pagination', clickable: true },
+            autoplay: { delay: 3500, disableOnInteraction: true },
         });
     </script>
 </body>
