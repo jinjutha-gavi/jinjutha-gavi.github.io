@@ -51,4 +51,166 @@
 
     /* Footer */
     .footer-inner { flex-direction: column; text-align: center; }
+    .footer p {
+        position: static;
+        transform: none;
+    }
+
+    /* Section headings */
+    .section-heading { font-size: clamp(1.8rem, 5vw, 3rem); }
+
+    /* CTA cards (Projects/Design/Certificates banners) */
+    .glass-card[style*="padding: 80px"] { padding: 50px 24px !important; }
+    .glass-card[style*="padding: 60px"] { padding: 40px 24px !important; }
+
+    /* Contact card */
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* =============================================
+   SMALL PHONE BREAKPOINT (≤480px)
+   ============================================= */
+@media (max-width: 480px) {
+    /* Base spacing */
+    .section-container { padding: 0 4%; }
+
+    /* Override inline padding-top on sections — too large for phones */
+    section[style*="padding-top: 150px"] { padding-top: 80px !important; }
+    section[style*="padding-top: 50px"] { padding-top: 30px !important; }
+    section[style*="padding-bottom: 100px"] { padding-bottom: 60px !important; }
+
+    /* Navbar */
+    .nav-inner { padding: 12px 4%; }
+    .logo-text { font-size: 1rem; }
+    .nav-links {
+        width: 100%;
+        padding: 70px 20px 20px;
+    }
+
+    /* Hero — Mobile phone */
+    .hero { padding: 100px 0 50px; min-height: auto; }
+    .hero-grid { gap: 24px; padding: 0 4%; }
+    .hero-photo-wrapper { width: 200px; height: 200px; }
+    .hero-title { font-size: clamp(1.8rem, 8vw, 2.5rem); margin-bottom: 16px; }
+    .hello-badge { font-size: 0.75rem; padding: 5px 14px; margin-bottom: 14px; }
+    .hero-quote { margin-bottom: 20px; gap: 8px; }
+    .quote-mark { font-size: 2rem; }
+    .hero-quote p { font-size: 0.85rem; }
+    .hero-actions { gap: 10px; }
+    .btn { padding: 12px 24px; font-size: 0.85rem; letter-spacing: 0.5px; }
+
+    /* Floating stats — tighter on phone */
+    .floating-stat { padding: 10px 14px; border-radius: 10px; }
+    .stat-exp { bottom: 10px; left: -10px; }
+    .stat-projects { top: 10px; right: -10px; }
+    .stat-number { font-size: 1.2rem; }
+    .stat-label { font-size: 0.6rem; }
+    .stat-stars { font-size: 0.55rem; letter-spacing: 1px; }
+
+    /* Section headers */
+    .section-label { font-size: 0.65rem; letter-spacing: 2px; margin-bottom: 8px; }
+    .section-heading { font-size: clamp(1.5rem, 7vw, 2.2rem); margin-bottom: 14px; }
+    
+    /* About */
+    .about { padding: 60px 0; }
+    .about-heading { font-size: clamp(1.2rem, 5vw, 1.6rem); }
+    .about-desc { font-size: 0.88rem; margin-bottom: 20px; }
+    .about-stats { gap: 20px; }
+    .about-stat-num { font-size: 1.5rem; }
+    .about-stat-text { font-size: 0.7rem; }
+    .about-card { padding: 16px 18px; gap: 12px; }
+    .about-card h4 { font-size: 0.9rem; }
+    .about-card p { font-size: 0.78rem; }
+
+    /* Services */
+    .services { padding: 60px 0; }
+    .services-desc { font-size: 0.85rem; }
+    .service-card { padding: 24px 20px; }
+    .service-card h4 { font-size: 1rem; }
+    .service-card p { font-size: 0.82rem; }
+    .service-icon { width: 48px; height: 48px; border-radius: 12px; margin-bottom: 14px; }
+
+    /* Projects CTA */
+    .projects { padding: 60px 0; }
+
+    /* Skills */
+    .skills { padding: 60px 0; }
+    .skill-category-card { padding: 20px 16px; }
+    .skill-category-card h4 { font-size: 0.95rem; }
+    .skill-pill { font-size: 0.68rem; padding: 3px 10px; }
+    .tools-section { margin-top: 40px; }
+    .tools-title { font-size: 0.78rem; letter-spacing: 1.5px; margin-bottom: 18px; }
+    .tool-chip { padding: 8px 16px; font-size: 0.78rem; }
+
+    /* Contact */
+    .contact { padding: 60px 0 60px; }
+    .contact-intro { font-size: 0.88rem; margin-bottom: 30px; }
+    .contact-card { padding: 22px 18px; }
+    .contact-card h4 { font-size: 0.95rem; }
+    .contact-card p { font-size: 0.75rem; }
+
+    /* Glass card — reduce the hover lift on mobile */
+    .glass-card:hover {
+        transform: translateY(-4px) scale(1.005);
+        box-shadow: 0 8px 20px rgba(83, 104, 120, 0.15);
+    }
+
+    /* Footer */
+    .footer { padding: 24px 0; }
+    .footer-inner { gap: 10px; }
+    .footer-logo { font-size: 1.2rem; }
+    .footer p { font-size: 0.78rem; }
+
+    /* Scroll indicator */
+    .scroll-indicator { bottom: 16px; }
+    .scroll-line { height: 28px; }
+
+    /* CTA cards inline styles override */
+    [style*="font-size: 3rem"] { font-size: 1.8rem !important; }
+    [style*="font-size: 2.5rem"] { font-size: 1.6rem !important; }
+    [style*="font-size: 1.2rem"][style*="padding: 18px"] { 
+        font-size: 1rem !important; 
+        padding: 14px 30px !important; 
+    }
+    [style*="font-size: 1.15rem"] { font-size: 0.95rem !important; }
+    [style*="font-size: 1.1rem"][style*="line-height: 1.6"] { font-size: 0.92rem !important; }
+
+    /* Back nav */
+    .back-nav { top: 70px; left: 3%; }
+    .btn-back { padding: 10px 18px; font-size: 0.8rem; }
+
+    /* Projects page on mobile */
+    .search-bar { padding: 14px 20px 14px 46px; font-size: 0.9rem; }
+    .search-icon { left: 16px; }
+    .filter-tags { gap: 6px; }
+    .filter-tag { padding: 6px 14px; font-size: 0.75rem; }
+    .project-tag { font-size: 0.7rem; }
+    .project-title { font-size: clamp(1.2rem, 5vw, 1.5rem); }
+    .project-desc-card { padding: 14px 16px; }
+    .project-desc-card p { font-size: 0.82rem; }
+    .project-tech span { font-size: 0.7rem; padding: 3px 10px; }
+    .project-link-btn { width: 34px; height: 34px; border-radius: 8px; }
+    .project-showcase { gap: 50px; }
+
+    /* View Details button */
+    .btn-detail-arrow { padding: 10px 22px; font-size: 0.82rem; }
+}
+
+/* =============================================
+   ULTRA-SMALL PHONE (≤360px)
+   ============================================= */
+@media (max-width: 360px) {
+    .hero-photo-wrapper { width: 170px; height: 170px; }
+    .hero-title { font-size: 1.6rem; }
+    .section-heading { font-size: 1.4rem; }
+    .btn { padding: 10px 20px; font-size: 0.8rem; }
+    .about-stats { flex-direction: column; gap: 12px; }
+    .floating-stat { display: none; }
 }

@@ -50,32 +50,3 @@ document.addEventListener('DOMContentLoaded', () => {
         skillObserver.observe(el);
     });
 });
-
-// ===== Custom Cursor Logic =====
-const cursorDot = document.getElementById('cursor-dot');
-const cursorOutline = document.getElementById('cursor-outline');
-
-if (cursorDot && cursorOutline) {
-    window.addEventListener('mousemove', (e) => {
-        const posX = e.clientX;
-        const posY = e.clientY;
-        
-        cursorDot.style.left = `${posX}px`;
-        cursorDot.style.top = `${posY}px`;
-        
-        cursorOutline.animate({
-            left: `${posX}px`,
-            top: `${posY}px`
-        }, { duration: 80, fill: "forwards" });
-    });
-
-    const clickables = document.querySelectorAll('a, button, .glass-card, .btn');
-    clickables.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursorOutline.classList.add('hover');
-        });
-        el.addEventListener('mouseleave', () => {
-            cursorOutline.classList.remove('hover');
-        });
-    });
-}
