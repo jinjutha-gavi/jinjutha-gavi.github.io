@@ -663,6 +663,22 @@
 
     .mag-section-number { font-size: 2rem; }
 
+    .swiper-pagination {
+        position: relative !important;
+        bottom: auto !important;
+        margin-top: 28px !important;
+        margin-bottom: 24px !important;
+    }
+
+    .mag-quote-break {
+        padding: 85px 16px 45px !important;
+        margin-bottom: 50px !important;
+    }
+    .mag-quote-break::before {
+        font-size: 5.5rem !important;
+        top: 20px !important;
+    }
+
     .swiper-coverflow .swiper-slide {
         width: 260px;
     }

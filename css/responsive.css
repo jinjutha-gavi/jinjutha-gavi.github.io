@@ -47,9 +47,22 @@
     .services-header { flex-direction: column; text-align: center; align-items: center; }
     .services-grid { grid-template-columns: 1fr; }
 
-    /* Projects */
-    .project-item, .project-item.reverse { grid-template-columns: 1fr; }
-    .project-item.reverse .project-meta { order: 0; text-align: left; }
+    /* Projects — Stack image first, then text info on mobile */
+    .project-item, .project-item.reverse { 
+        grid-template-columns: 1fr; 
+        gap: 24px;
+    }
+    .project-preview { 
+        order: 1; /* Image first */
+    }
+    .project-meta { 
+        order: 2; /* Text info second */
+        text-align: left !important;
+    }
+    .project-item.reverse .project-meta { 
+        order: 2; 
+        text-align: left !important; 
+    }
     .project-item.reverse .project-meta .project-tech { justify-content: flex-start; }
     .project-item.reverse .project-meta .project-links { justify-content: flex-start; }
 
@@ -116,16 +129,23 @@
 
     /* Floating stats — super compact and clean for mobile */
     .floating-stat {
-        padding: 6px 10px;
+        padding: 6px 8px;
         border-radius: 8px;
-        max-width: 130px;
+        max-width: 105px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.25);
     }
-    .stat-exp { bottom: 5px; left: -15px; }
-    .stat-projects { top: 5px; right: -15px; }
-    .stat-number { font-size: 0.8rem; font-weight: 700; line-height: 1.2; }
-    .stat-label { display: none; } /* Hide long labels to keep it tiny */
-    .stat-stars { font-size: 0.5rem; letter-spacing: 0.5px; margin-bottom: 1px; }
+    .stat-exp { bottom: 5px; left: -5px; } /* Closer to the circular photo border */
+    .stat-projects { top: 5px; right: -5px; } /* Closer to the circular photo border */
+    .stat-number { font-size: 0.78rem; font-weight: 700; line-height: 1.2; }
+    .stat-label { 
+        display: block !important; 
+        font-size: 0.5rem !important; 
+        line-height: 1.1; 
+        margin-top: 1px; 
+        opacity: 0.85; 
+        white-space: normal; 
+    }
+    .stat-stars { font-size: 0.45rem; letter-spacing: 0.5px; margin-bottom: 1px; }
 
     /* Section headers */
     .section-label { font-size: 0.65rem; letter-spacing: 2px; margin-bottom: 8px; }
