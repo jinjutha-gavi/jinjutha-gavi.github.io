@@ -116,7 +116,7 @@
     }
 
     /* Hero — Mobile phone */
-    .hero { padding: 100px 0 50px; min-height: auto; }
+    .hero { padding: 100px 0 85px; min-height: auto; }
     .hero-grid { gap: 24px; padding: 0 4%; }
     .hero-photo-wrapper { width: 200px; height: 200px; }
     .hero-title { font-size: clamp(1.8rem, 8vw, 2.5rem); margin-bottom: 16px; }
@@ -202,7 +202,7 @@
     .footer p { font-size: 0.78rem; }
 
     /* Scroll indicator */
-    .scroll-indicator { bottom: 16px; }
+    .scroll-indicator { bottom: 14px; }
     .scroll-line { height: 28px; }
 
     /* CTA cards inline styles override */
