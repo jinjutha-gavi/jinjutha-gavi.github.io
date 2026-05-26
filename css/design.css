@@ -140,6 +140,7 @@
     width: 100%;
     height: auto;
     object-fit: contain;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .swiper-coverflow .swiper-slide-active {
@@ -147,6 +148,23 @@
     box-shadow: 
         0 20px 60px rgba(83, 104, 120, 0.25),
         0 0 0 1px rgba(83, 104, 120, 0.1);
+}
+
+/* ---- Loading state: placeholder background until images load ---- */
+.swiper .swiper-slide img {
+    background: rgba(255, 255, 255, 0.03);
+    min-height: 200px;
+    transition: opacity 0.4s ease;
+}
+
+/* Prevent layout shift — ensure swiper wrapper has min height */
+.swiper-wrapper {
+    align-items: center;
+}
+
+/* Fix: ensure coverflow slides stay properly centered */
+.swiper-coverflow {
+    overflow: hidden;
 }
 
 /* ---- Creative Variant ---- */
